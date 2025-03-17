@@ -8,11 +8,13 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords"
+    content="Bakhshish Associates, Bakhshish, Real Estate, BK, Sohail Ahmed Ansari, Faraz Ahmed Madni, Hussain Shamim, Muhammad Hussain Shamim, property dealers, real estate agents, buy property, sell property, house for sale, apartments for rent, investment property, commercial real estate, residential real estate, property management, real estate consultancy, real estate listings, real estate marketing, real estate services, plot for sale, land investment, rental property, luxury homes, property investment, housing society, mortgage services, real estate financing, rental listings, house hunting, home buyers, home sellers, real estate trends, market analysis, best real estate agency, real estate Pakistan, Karachi real estate, DHA property, Bahria Town property, Gulshan-e-Iqbal real estate, Clifton properties, PECHS real estate, property valuation, real estate deals, property portal, housing projects, investment opportunities, new developments, real estate news, home loans, property tax, legal real estate advice, urban development" />
+  <meta name="description"
+    content="Bakhshish Associates is a leading provider of real estate, construction, and IT solutions. We specialize in property management, documentation, verification, and civil suits. Additionally, we offer event planning, social media management, and Nikkah services." />
+  <meta name="author" content="Faraz Ahmed Al Madni , Sohail Ahmed Ansari" />
 
-  <title>Teaser</title>
+  <title>Bakhshish Associates</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -23,6 +25,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="icon" href="images/Dp.png" type="image/gif" sizes="16x16" />
 </head>
 
 <body>
@@ -38,10 +42,10 @@
             <ul class="navbar-nav justify-content-between ">
               <div class="User_option">
                 <li class="">
-                  <a class="mr-4" href="">
+                  <a class="mr-4" href="login.html">
                     Login
                   </a>
-                  <a class="" href="">
+                  <a class="" href="signup.html">
                     Sign up
                   </a>
                 </li>
@@ -65,8 +69,7 @@
               <div class="overlay-content">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
-                <a href="house.html">HOUSE</a>
-                <a href="price.html">PRICING</a>
+                <a href="house.html">PROPERTIES</a>
                 <a href="contact.html">CONTACT US</a>
               </div>
             </div>
@@ -82,15 +85,16 @@
           <div class="col-md-4 offset-md-1">
             <div class="detail-box">
               <h1>
-                <span> Modern</span> <br>
-                Apartment <br>
-                House
+                <span> Bakhshish</span> <br>
+                Associates <br>
               </h1>
+              <small style="font-weight: 700; font-size: 2rem; margin-top: -20px; color: rgba(0, 0, 109, 0.767);">&
+                Realtors</small>
               <p>
-                It is a long established fact that a reader will be distracted by the readable content of
+                We specialize in property management, documentation, verification, and civil suits.
               </p>
               <div class="btn-box">
-                <a href="" class="">
+                <a href="./about.html" class="">
                   Read More
                 </a>
               </div>
@@ -105,13 +109,18 @@
   <!-- find section -->
   <section class="find_section ">
     <div class="container">
-      <form action="">
+      <form action="javascript:void(0)" onsubmit="searchproperties()">
         <div class=" form-row">
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Serach Your Categories ">
+            <!-- <input type="text" class="form-control" placeholder="Serach Your Categories "> -->
+             <select name="city" id="city" class="form-control">
+              <option value="Landhi">Landhi</option>
+              <option value="Korangi">Korangi</option>
+              <option value="DHA">DHA</option>
+             </select>
           </div>
           <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="Location ">
+            <input type="text" class="form-control" placeholder="Location " id="location">
           </div>
           <div class="col-md-2">
             <button type="submit" class="">
@@ -144,15 +153,15 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Our Apartment
+                About Bakhshish Associates
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by injected humour, or randomised words
+              Bakhshish Associates is a leading provider of real estate, construction, and IT solutions. We specialize
+              in property management, documentation, verification, and civil suits. Additionally, we offer event
+              planning, social media management, and Nikkah services.
             </p>
-            <a href="">
+            <a href="./about.html">
               Read More
             </a>
           </div>
@@ -169,13 +178,13 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          House For Sale
+          Properties For Sale
         </h2>
         <p>
-          There are many variations of passages of Lorem Ipsum available, but the
+          Discover prime real estate options handpicked by Bakhshish Associates..
         </p>
       </div>
-      <div class="sale_container">
+      <div class="sale_container" id="containerofsale">
         <div class="box">
           <div class="img-box">
             <img src="images/s-1.jpg" alt="">
@@ -256,7 +265,7 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
+        <a href="./house.html">
           Find More
         </a>
       </div>
@@ -267,7 +276,7 @@
 
   <!-- price section -->
 
-  <section class="price_section layout_padding-bottom">
+  <!-- <section class="price_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -406,7 +415,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end price section -->
 
   <!-- deal section -->
@@ -426,7 +435,7 @@
               in
               some form, by injected humour, or randomised words which don't look even slightly believable.
             </p>
-            <a href="">
+            <a href="./contact.html">
               Get A Quote
             </a>
           </div>
@@ -454,7 +463,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Why Choose Us
+          We Work For You
         </h2>
       </div>
       <div class="row">
@@ -465,10 +474,10 @@
             </div>
             <div class="detail-box">
               <h3 class="price">
-                1000+
+                300+
               </h3>
               <h5>
-                Years of House
+                Real Estate Solutions
               </h5>
             </div>
           </div>
@@ -480,10 +489,10 @@
             </div>
             <div class="detail-box">
               <h3>
-                20000+
+                30+
               </h3>
               <h5>
-                Projects Delivered
+                Documentation
               </h5>
             </div>
           </div>
@@ -495,10 +504,70 @@
             </div>
             <div class="detail-box">
               <h3>
-                10000+
+                400+
               </h3>
               <h5>
-                Satisfied Customers
+                Civil Suits
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/u-4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                10+
+              </h3>
+              <h5>
+                Garage
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/u-1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h3 class="price">
+                100+
+              </h3>
+              <h5>
+                IT solutions
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/u-2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                2000+
+              </h3>
+              <h5>
+                Verification
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/u-3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                70+
+              </h3>
+              <h5>
+                Construction Services
               </h5>
             </div>
           </div>
@@ -513,21 +582,94 @@
                 1500+
               </h3>
               <h5>
-                Cheap Rates
+                Nikkah Services
               </h5>
             </div>
           </div>
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
-          Get A Quote
+        <a href="./contact.html">
+          Contact Now
         </a>
       </div>
     </div>
   </section>
-
   <!-- end us section -->
+
+  <!-- Team Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+
+        <h2 class="mb-4" style="font-weight: 800; color: #000000c4; text-transform: capitalize;">Property Agents</h2>
+
+        <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+          eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item rounded overflow-hidden">
+            <div class="position-relative">
+              <img class="img-fluid" src="images/teamMember (1).jpg" alt="Team Members">
+              <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+
+              </div>
+            </div>
+            <div class="text-center p-4 mt-3">
+              <h5 class="fw-bold mb-0">Faraz Ahmed Madni</h5>
+              <small>Director</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item rounded overflow-hidden">
+            <div class="position-relative">
+              <img class="img-fluid" src="images/teamMember (3).jpg" alt="Team Members">
+              <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+
+              </div>
+            </div>
+            <div class="text-center p-4 mt-3">
+              <h5 class="fw-bold mb-0">M. Saim Sarosh</h5>
+              <small>Second Director</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item rounded overflow-hidden">
+            <div class="position-relative">
+              <img class="img-fluid" src="images/teamMember (7).png" alt="Team Members">
+              <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+
+              </div>
+            </div>
+            <div class="text-center p-4 mt-3">
+              <h5 class="fw-bold mb-0">Sohail Ahmed Ansari</h5>
+              <small>Assistant Director</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item rounded overflow-hidden">
+            <div class="position-relative">
+              <img class="img-fluid" src="images/yousof.jpg" alt="Team Members">
+              <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+              </div>
+            </div>
+            <div class="text-center p-4 mt-3">
+              <h5 class="fw-bold mb-0">Yousuf Ansari</h5>
+              <small>Advisor</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
+  <!-- cover Back start-->
+  <img src="images/fb cover  copy.jpg" alt="bakhshish-associates-cover-banner" width="100%">
+  <!-- cover Back end -->
 
   <!-- client secction -->
 
@@ -535,7 +677,7 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          What is Says Our Customer
+          What is Says Our Clients
         </h2>
       </div>
       <div class="client_container">
@@ -544,17 +686,16 @@
             <div class="carousel-item active">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="images/user 1.jpeg" alt="user image">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Yasir Shaikh</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    Bakhshish Associates provided outstanding service during my property purchase. Their team
+                    was professional, transparent, and made the process stress-free.
                   </p>
                 </div>
               </div>
@@ -562,17 +703,17 @@
             <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="images/user 3.jpeg" alt="user image">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Rehan Hydrabadi</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    I was impressed by their attention to detail and extensive market knowledge. They helped
+                    me find the perfect plot for my new home, ensuring everything was smooth and
+                    hassle-free. A great experience overall.
                   </p>
                 </div>
               </div>
@@ -580,17 +721,17 @@
             <div class="carousel-item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                  <img src="images/user 4.jpeg" alt="user image">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    <span>Majority</span>
+                    <span>Tahir Baig</span>
                     <hr>
                   </h5>
                   <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    Their documentation and verification services are exceptional. I felt completely
+                    confident knowing my investment was in safe hands. Bakhshish Associates made sure the
+                    entire process was seamless and secure.
                   </p>
                 </div>
               </div>
@@ -620,32 +761,35 @@
         </h2>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row">
         <div class="col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-5 ">
+        <div class="col-lg-6 col-md-5 ">
           <div class="form_container">
-            <form action="">
+            <form action="JavaScript:void(0)" onsubmit="Contact_form()">
               <div>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Name" required id="Name" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" required id="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Phone Number" required id="Phone" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" required id="message" />
               </div>
               <div class="d-flex ">
-                <button>
+                <button type="submit">
                   Send
                 </button>
               </div>
@@ -675,7 +819,7 @@
                 <img src="images/location.png" width="18px" alt="">
               </div>
               <p>
-                Address
+                ST 8,Sector 44 C Landhi Town
               </p>
             </div>
             <div>
@@ -683,7 +827,7 @@
                 <img src="images/phone.png" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                +92 3473424275
               </p>
             </div>
             <div>
@@ -691,18 +835,19 @@
                 <img src="images/mail.png" width="18px" alt="">
               </div>
               <p>
-                demo@gmail.com
+                bakhshishassociates@gmail.com
               </p>
             </div>
           </div>
         </div>
+
         <div class="col-md-3">
           <div class="info_info">
             <h5>
               Information
             </h5>
             <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              Bakhshish Associates is a leading provider of real estate, construction, and IT solutions.
             </p>
           </div>
         </div>
@@ -714,61 +859,41 @@
             </h5>
             <ul>
               <li>
-                <a href="">
-                  There are many
+                <a href="./index.html">
+                  Home
                 </a>
-              </li>
+              </li> <br>
               <li>
-                <a href="">
-                  variations of
+                <a href="./about.html">
+                  About
                 </a>
-              </li>
+              </li> <br>
               <li>
-                <a href="">
-                  passages of
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Lorem Ipsum
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  available, but
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  the i
+                <a href="./contact.html">
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
         </div>
+
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
               Newsletter
             </h5>
-            <form action="">
-              <input type="email" placeholder="Enter your email">
+            <form action="JavaScript:void(0)" onsubmit="subscribe()">
+              <input type="email" placeholder="Enter your email" minlength="8" id="sub" required>
               <button>
                 Subscribe
               </button>
             </form>
             <div class="social_box">
-              <a href="">
+              <a href="https://www.facebook.com/people/Bakhshish-Associates/61559267128693/">
                 <img src="images/fb.png" alt="">
               </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
+              <a href="https://www.linkedin.com/company/bakhshish-associates/">
                 <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
               </a>
             </div>
           </div>
@@ -784,8 +909,8 @@
   <section class="container-fluid footer_section ">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> Bakhshish Associates All Rights Reserved. Developed By
+        <a href="https://hussainshamim.netlify.app/">M. Hussain Shamim</a>
       </p>
     </div>
   </section>
@@ -795,6 +920,8 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/user_regitration/contact.js"></script>
+  <script type="text/javascript" src="js/Crud/propertiesGet.js"></script>
 
 
 </body>

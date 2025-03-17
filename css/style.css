@@ -148,7 +148,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 90px;
+  width: 100px;
 }
 
 .custom_nav-container {
@@ -721,7 +721,7 @@ a:focus {
 }
 
 .client_section .client_container .box .img-box img {
-  width: 100%;
+  width: 80%;
 }
 
 .client_section .client_container .box .detail-box h5 {
