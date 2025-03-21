@@ -82,12 +82,20 @@
 
 
   <!-- contact section -->
-  <form action="JavaScript:void(0)" method="post" onsubmit="login()">
-    <h1> Login Bakhshish </h1>
-    <input type="email" placeholder="Email" required id="loginemail"> <br> <br>
-    <input type="password" placeholder="password" required id="loginpassword"> <br> <br>
-    <button type="submit">login</button>
-  </form>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg w-100" style="max-width: 400px;">
+        <h2 class="text-center mb-4">Login Bakhshish</h2>
+        <form action="JavaScript:void(0)" method="post" onsubmit="login()">
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required id="loginemail">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password" required id="loginpassword">
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: #0f2480; color: white;">Login</button>
+        </form>
+    </div>
+</div>
   <!-- end contact section -->
 
 

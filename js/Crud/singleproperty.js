@@ -1,4 +1,4 @@
-import { db, doc, getDoc } from "../js/firebase.js";
+import { db, doc, getDoc } from "../configration/db.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     function getBlogIdFromURL() {
@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const blogId = getBlogIdFromURL();
+    console.log(blogId)
 
     if (blogId) {
         try {
@@ -28,22 +29,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function displayBlogDetails(blog) {
-    const blogContainer = document.getElementById('blog-one-container');
+    // console.log(blog);
+    const {title,category,description,postImage} = blog;
     const blognameintitle = document.getElementById('blognameintitle');
-    blognameintitle.innerHTML = blog.title;
+    blognameintitle.innerHTML = `${title} || Bakhshish Associates`;
+    const blogContainer = document.getElementById('blog-one-container');
     blogContainer.innerHTML = `
-        <div class="col-lg-4 col-md-6 wit">
-            <div class="property-item rounded overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img class="img-fluid" src="${blog.postImage}" alt="${blog.title}">
-                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
-                        ${blog.category}
-                    </div>
-                </div>
-                <div class="p-4 pb-0">
-                    <h4>${blog.title}</h4>
-                    <p>${blog.description}</p>
-                </div>
+                <div class="box">
+            <div class="img-box">
+                 <img src="${postImage}" alt="${title}">
+            </div>
+            <div class="detail-box">
+              <h6><small>${category}</small></h6>
+            <h6>${title}</h6>
+            <p>${description}</p>
             </div>
         </div>
     `;

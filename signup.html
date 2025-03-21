@@ -82,20 +82,34 @@
 
 
     <!-- contact section -->
-    <form action="JavaScript:void(0)" method="get" onsubmit="AddUser()">
-        <h1> Signup Bakhshish </h1>
-        <input type="text" placeholder="Full Name" required id="UserName"> <br> <br>
-        <input type="number" placeholder="Number" required id="userNumber"> <br> <br>
-        <select name="selectingUser" id="user_is">
-            <option value="agent">Agent</option>
-            <option value="Saller">Saller</option>
-            <option value="byer">Byer</option>
-        </select>
-        <br> <br>
-        <input type="email" placeholder="Email" required id="email"> <br> <br>
-        <input type="password" placeholder="password" required id="password"> <br> <br>
-        <button type="submit">signup</button>
-    </form>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow-lg w-100" style="max-width: 400px;">
+            <h2 class="text-center mb-4">Signup Bakhshish</h2>
+            <form action="JavaScript:void(0)" method="get" onsubmit="AddUser()">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Full Name" required id="UserName">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Number" required id="userNumber">
+                </div>
+                <div class="mb-3">
+                    <select class="form-select form-control" id="user_is">
+                        <option value="agent">Agent</option>
+                        <option value="Saller">Saller</option>
+                        <option value="byer">Byer</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required id="email">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password" required id="password">
+                </div>
+                <button type="submit" class="btn w-100" style="background-color: #0f2480; color: white;">Signup</button>
+            </form>
+        </div>
+    </div>
+    
     <!-- end contact section -->
 
 

@@ -1,24 +1,41 @@
+import { 
+  app, db, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc, query, limit 
+} from "../configration/db.js";
 
-// properties render
-let carlenght = [1,2,3,4,5,6,7,8,9 ];
-let containerOfsale = document.getElementById("containerofsale")
+const blogContainer = document.getElementById('containerofsale');
+blogContainer.innerHTML = ""; // Clear the container
 
-carlenght.forEach((val,index)=>{
-containerOfsale.innerHTML += `
-        <div class="box">
+const renderData = async () => {
+  const q = collection(db, "post"); // Get only 8 documents
+  const getData = await getDocs(q);
+  
+  getData.forEach((doc) => {
+    const postid = doc.id;
+    const { title, description, postImage, category } = doc.data();
+    const truncatedDescription = truncateText(description, 200, postid);
+    
+    const blogCard = `
+         <div class="box">
           <div class="img-box">
-            <img src="images/s-1.jpg" alt="">
+            <img src="${postImage}" alt="${title}">
           </div>
           <div class="detail-box">
-            <h6>
-              apertments house ${val}
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
+              <h6><small>${category}</small></h6>
+            <h6>${title}</h6>
+            <p>${truncatedDescription}</p>
           </div>
         </div>
+    `;
+    blogContainer.innerHTML += blogCard;
+  });
+}
 
-`
-})
-// properties render
+function truncateText(text, maxLength, blogid) {
+  if (text.length > maxLength) {
+    const truncated = text.substring(0, maxLength);
+    return `${truncated}... <a href="/singleProperty.html?id=${blogid}" class="read-more">Read More</a>`;
+  }
+  return text;
+}
+
+renderData();

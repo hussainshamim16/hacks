@@ -1,47 +1,45 @@
+// Initilize Firebase
 import {
     app,
     // database
     db, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc,
+  
+  } from "../configration/db.js";
+  
+  const blogContainer = document.getElementById('containerofsale');
+  blogContainer.innerHTML = ""; // Clear the container
+  
+  const renderData = async () => {
+    try {
+        const getData = await getDocs(collection(db, "post"));
+        blogContainer.innerHTML = ""; // UI کو کلئیر کریں تاکہ duplicate نہ آئیں
 
-} from "./firebase.js";
+        getData.forEach((doc) => {
+            const postid = doc.id;
+            const { title, description, postImage, category } = doc.data();
+            const truncatedDescription = truncateText(description, 200, postid);
 
-const title = document.getElementById("title")
-const description = document.getElementById("description")
-const category = document.getElementById("category")
-const postImage = document.getElementById("postImage")
-const postupload = document.getElementById("postupload")
-
-const perantData = document.getElementById("blog-container")
-const getData = document.getElementById("getData")
-
-
-const blogContainer = document.getElementById('blog-container');
-blogContainer.innerHTML = ""; // Clear the container
-const renderData = async () => {
-    const getData = await getDocs(collection(db, "post"))
-    getData.forEach((doc) => {
-        const postid = doc.id
-        const { title, description, postImage, category } = doc.data()
-        const truncatedDescription = truncateText(description, 200, postid);
-        const blogCard = `
-                        <div class="col-lg-4 col-md-6 wow fadeInUp wit" data-wow-delay="0.1s">
-                            <div class="property-item rounded overflow-hidden">
-                                <div class="position-relative overflow-hidden">
-                                   <img class="img-fluid" src="${postImage}" alt="${title}">
-                                    <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">${category}</div>
-                                </div>
-                                <div class="p-4 pb-0">
-                                    <h4>${title}</h4>
-                                    <p>${truncatedDescription}</p>
-                                </div>
-                            </div>
-                        </div>
+            const blogCard = `
+                <div class="box">
+                    <div class="img-box">
+                        <img src="${postImage}" alt="${title}">
+                    </div>
+                    <div class="detail-box">
+                        <h6><small>${category}</small></h6>
+                        <h6>${title}</h6>
+                        <p>${truncatedDescription}</p>
+                    </div>
+                </div>
             `;
-        blogContainer.innerHTML += blogCard;
-    });
 
-}
+            blogContainer.innerHTML += blogCard;
+        });
+    } catch (error) {
+        console.error("Error fetching blogs:", error);
+    }
+};
 
+// Description کو truncate کرنے کے لیے function
 function truncateText(text, maxLength, blogid) {
     if (text.length > maxLength) {
         const truncated = text.substring(0, maxLength);
@@ -50,6 +48,7 @@ function truncateText(text, maxLength, blogid) {
     return text;
 }
 
+// Function کو کال کریں تاکہ بلاگز شو ہوں
+renderData();
 
-// renderData()   this function is used to get data from firebase and show on the screen
-renderData()
+  

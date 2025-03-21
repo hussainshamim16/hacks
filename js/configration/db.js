@@ -1,5 +1,5 @@
 import { initializeApp, getApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc,query, limit  } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -19,4 +19,4 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 // Initialize Cloud Storage and get a reference to the service
-export { app, getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc, db }
+export { app, getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc, db ,query, limit }
