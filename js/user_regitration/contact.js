@@ -1,6 +1,3 @@
-
-
-
 let Name = document.getElementById("Name");
 let Email = document.getElementById("Email");
 let Phone = document.getElementById("Phone");
