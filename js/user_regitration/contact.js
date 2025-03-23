@@ -1,7 +1,7 @@
 import { db, addDoc, collection } from "../configration/db.js";
 
 // ✅ EmailJS Initialization
-emailjs.init("SYVjtvHTioh8TP_-m");
+emailjs.init("cGlmlRaT29ggY3WWQ");
 
 // ✅ DOM Elements
 let Name = document.getElementById("Name");
@@ -29,7 +29,7 @@ const Contact_form = async () => {
         
         // ✅ Step 1: Save Data to Firestore
         let docRef = await addDoc(collection(db, "contactForms"), contact_Form_submit);
-        console.log("Data saved in Firestore ✅", docRef.id);
+        // console.log("Data saved in Firestore ✅", docRef.id);
 
         // ✅ Step 2: Send Email using EmailJS
         let emailParams = {
@@ -39,8 +39,8 @@ const Contact_form = async () => {
             message: Message.value
         };
 
-        await emailjs.send("service_e8fc55w", "template_psv6mql", emailParams, "SYVjtvHTioh8TP_-m");
-        console.log("Email sent successfully ✅");
+        await emailjs.send("service_0um6lg3", "template_y74j9d6", emailParams);
+        // console.log("Email sent successfully ✅");
 
         // ✅ Success Message
         alert("Your message has been submitted and emailed successfully!");
