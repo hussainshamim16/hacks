@@ -33,7 +33,7 @@ const renderData = async () => {
 function truncateText(text, maxLength, blogid) {
   if (text.length > maxLength) {
     const truncated = text.substring(0, maxLength);
-    return `${truncated}... <a href="/singleProperty.html?id=${blogid}" class="read-more">Read More</a>`;
+    return `${truncated}... <a href="../singleProperty.html?id=${blogid}" class="read-more">Read More</a>`;
   }
   return text;
 }
