@@ -1,0 +1,286 @@
+/* ############################## Font's start ##################### */
+/* Fonts For Heading */
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-Bold.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-Medium.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-Light.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'plus-jakarta-sans';
+    src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/plus-jakarta-sans/PlusJakartaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fonts For Numbers */
+@font-face {
+    font-family: 'editor-note';
+    src: url('../fonts/editors-note/EditorsNote-Medium.woff2') format('woff2'),
+        url('../fonts/editors-note/EditorsNote-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ############################## global classes start ##################### */
+:root {
+    /* Typography tokens from Figma */
+    --camo-body-font: 'plus-jakarta-sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    /* Brand  ver*/
+    --brand-primary: #14357A;
+    /* Navy-based trust color (good for pressure washing) */
+    --brand-accent: #FC621A;
+    /* Orange (contrast punch) */
+
+    /* brand support */
+    --support-red: #A53906;
+    --support-sky: #19ABC8;
+    --support-blue: #26419C;
+
+    /* Brand Utility  colors*/
+    --text-btn-primary: #006082;
+    --text-primary: #1B2A41;
+    --text-scondery: #4C6C87;
+    --neutral-white: #FFFFFF;
+    --tag-green: #19AAC73B;
+    --drag-blue: #19AAC7;
+    --shadow-cyan: #1AACCA;
+
+    /* global  ver*/
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-text-dark: #1F1F1F;
+    --color-grey: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--camo-body-font)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    color: var(--text-primary);
+    font-family: var(--camo-body-font);
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    color: var(--color-brand-primary);
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}
+h3,h4{
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    color: var(--text-scondery);
+}
+
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+.camo-margin-top {
+    margin-top: 100px;
+}
+
+a {
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+a:active {
+    color: var(--brand-accent);
+}
+
+.num {
+    font-family: 'editor-note' !important;
+}
+
+.camo-sub-heading {
+    color: var(--brand-accent);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.camo-sub-heading-after {
+    width: 55px;
+    background: var(--brand-accent);
+    line-height: 3px;
+}
+
+
+/* -----------------------------------------------------NAVBAR------------------------------ */
+header.camo-navbar .navbar {
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand-accent);
+}
+
+
+.camo-btn {
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.camo-btn-primary {
+    background: linear-gradient(90deg, #ff6a00, #b34500);
+    color: var(--neutral-white);
+}
+
+.camo-btn-secondery {
+    background: var(--color-white);
+    color: var(--text-btn-primary);
+}
+.camo-btn-dark {
+    background: linear-gradient(135deg , #26419C 50%, #19ABC8);
+    color: var(--color-white);
+}
+.camo-btn-dark svg rect{
+    fill: var(--color-white);
+}
+.camo-btn-dark svg path{
+    fill: var(--color-black);
+}
+
+
+.arrow-icon {
+    background: var(--neutral-white);
+    color: var(--brand-accent);
+    font-size: 10px;
+}
+
+
+/* -----------------------------------------------------------------FOOTER----------------------------------- */
+
+
+/* Custom Social Icons Circle */
+.social-icon {
+    width: 38px;
+    height: 38px;
+    border: 2px solid var(--neutral-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--brand-accent);
+    border-color: var(--neutral-white);
+    transform: translateY(-3px);
+}
+
+
+.footer-link:hover {
+    color: var(--brand-accent) !important;
+    padding-left: 5px;
+}
+
+.back-top {
+    background: linear-gradient(90deg, #35597a, #35516b);
+
+
+}
+
+/* Hero Section */
+.camo-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.camo-hero h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+/* about section */
+section.camo-about p{
+    font-size: 15px;
+}
