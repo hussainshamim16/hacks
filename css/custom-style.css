@@ -416,3 +416,134 @@ button:not(.collapsed)::after {
     --bs-accordion-border-color: unset !important;
     border: none !important;
 }
+
+/* usman code */
+
+/* -------------------------------------------------------------------------USMAN SECTION 3 TAGLINE ------------------------- */
+.marquee-section {
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+.marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: scroll-left 15s linear infinite;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.combo-text {
+    color: #BDEBF3;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.bubble-img {
+    width: clamp(80px, 12vw, 160px);
+    height: auto;
+}
+
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+
+/* -----------------------------------------------------------------------USMAN SECTION 5------------------------------------ */
+.side-line {
+    height: 2px;
+    width: 160px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+
+/* ----------------------------------------------------------------------USMAN SECTION 6------------------------------ */
+
+
+
+
+.text-navy {
+    color: #1B2A41 !important;
+}
+
+.bg-orange {
+    background: linear-gradient(90deg, #FC621A, #A53906);
+}
+
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.six-h4 {
+    color: #1B2A41;
+}
+
+.six-p {
+    color: #4C6C87;
+}
+
+
+.camo-six-card {
+    transition: all .3s ease !important;
+}
+
+.camo-six-card:hover {
+    background-color: #14357A !important;
+    cursor: pointer;
+}
+
+.camo-six hr {
+    transition: all .3s ease !important;
+}
+
+.camo-six-card:hover h4 {
+    color: white;
+    cursor: pointer;
+}
+
+.camo-six-card p {
+    transition: all .3s ease !important;
+}
+
+.camo-six-card:hover p {
+    color: white;
+    cursor: pointer;
+}
+
+.camo-six-card .icon-circle {
+    transition: all .3s ease !important;
+}
+
+.camo-six-card:hover .icon-circle {
+    background: #536c9e !important;
+    cursor: pointer;
+}
+
