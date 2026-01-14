@@ -203,6 +203,7 @@ header.camo-navbar .navbar {
     font-weight: 600;
     width: fit-content;
     border-radius: 20px;
+    font-size: 14px;
 }
 
 .camo-btn-primary {
@@ -291,12 +292,12 @@ section.camo-about p {
     font-size: 15px;
 }
 
-section.camo-about .container .row.bg-white{
-    border-radius: 50px;   
-     padding: 30px 20px 30px 50px !important;
+section.camo-about .container .row.bg-white {
+    border-radius: 50px;
+    padding: 30px 20px 30px 50px !important;
 }
 
-section.camo-about .image-side-camo .top-section .cards-top{
+section.camo-about .image-side-camo .top-section .cards-top {
     height: 260px;
     border-radius: 40px;
     width: 49% !important;
@@ -317,4 +318,101 @@ section.camo-about .col-6 .icon .first p {
 
 section.camo-about .icon .second {
     font-size: 50px;
+}
+
+
+/* ############################## Sufiyan's Styling Starts here ##################### */
+
+
+.town-name {
+    background-image: url('data:image/svg+xml,<svg width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5403 0C5.62643 0 0 5.66544 0 12.6309C0 22.528 11.3615 32.747 11.845 33.1761C12.0443 33.3531 12.2923 33.4409 12.5403 33.4409C12.7883 33.4409 13.0364 33.3531 13.2356 33.1775C13.7191 32.747 25.0807 22.528 25.0807 12.6309C25.0807 5.66544 19.4542 0 12.5403 0ZM12.5403 19.5072C8.69881 19.5072 5.57348 16.3818 5.57348 12.5403C5.57348 8.69881 8.69881 5.57348 12.5403 5.57348C16.3818 5.57348 19.5072 8.69881 19.5072 12.5403C19.5072 16.3818 16.3818 19.5072 12.5403 19.5072Z" fill="%2319AAC7"/></svg>');
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+    background-size: 24px;
+    color: var(--text-primary);
+}
+
+
+.map-of-towns iframe {
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+.lineer {
+    width: 1px;
+    height: 40px;
+    background: black;
+}
+
+
+/* faqsec */
+.custom-accordion .accordion-item {
+    margin-bottom: 25px;
+    border-radius: 30px 30px 30px 30px !important;
+    overflow: hidden;
+    background: #f4f9ff;
+    background: linear-gradient(135deg, #14357A, #1B2A41);
+    box-shadow: -20px 10px 100px -4px rgb(132 188 221 / 39%);
+}
+
+/* Heading default */
+.custom-accordion .accordion-button {
+    background: #ffffff;
+    color: #002B51;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 32px;
+    line-height: 1.4;
+}
+
+/* Remove Bootstrap shadow */
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+/* When opened */
+.custom-accordion .accordion-button:not(.collapsed) {
+    background: transparent;
+    color: #ffffff;
+    border-radius: 30px 30px 0 0 !important;
+    padding: 40px 40px 20px !important;
+}
+
+/* Body style */
+.custom-accordion .accordion-body {
+    padding: 0px 40px 40px 40px;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0px 0px 30px 30px !important;
+    font-size: 18px;
+}
+
+/* Arrow rotate on open */
+.accordion-button::after {
+    transition: transform .3s ease-in-out;
+    background: url('data:image/svg+xml,<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16.9698" cy="16.9698" r="16.9698" fill="%23FC621A"/><path d="M9.96985 16.9697H23.9698M23.9698 16.9697L16.9698 23.9697M23.9698 16.9697L16.9698 9.96973" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    width: 40px !important;
+    height: 40px !important;
+    background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+    width: 33px;
+    height: 33px;
+}
+
+button:not(.collapsed)::after {
+    background: url('data:image/svg+xml,<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16.9698" cy="16.9698" r="16.9698" fill="%23FC621A"/><path d="M9.96985 16.9697H23.9698M23.9698 16.9697L16.9698 23.9697M23.9698 16.9697L16.9698 9.96973" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    transform: rotate(270deg) !important;
+}
+
+.accordion {
+    --bs-accordion-border-width: 0px !important;
+    --bs-accordion-border-color: unset !important;
+    border: none !important;
 }
