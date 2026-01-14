@@ -140,7 +140,9 @@ h2 {
     line-height: 60px;
     font-weight: 600;
 }
-h3,h4{
+
+h3,
+h4 {
     font-weight: 600;
 }
 
@@ -212,14 +214,17 @@ header.camo-navbar .navbar {
     background: var(--color-white);
     color: var(--text-btn-primary);
 }
+
 .camo-btn-dark {
-    background: linear-gradient(135deg , #26419C 50%, #19ABC8);
+    background: linear-gradient(135deg, #26419C 50%, #19ABC8);
     color: var(--color-white);
 }
-.camo-btn-dark svg rect{
+
+.camo-btn-dark svg rect {
     fill: var(--color-white);
 }
-.camo-btn-dark svg path{
+
+.camo-btn-dark svg path {
     fill: var(--color-black);
 }
 
@@ -280,7 +285,36 @@ header.camo-navbar .navbar {
     font-size: 50px;
     font-weight: 600;
 }
+
 /* about section */
-section.camo-about p{
+section.camo-about p {
     font-size: 15px;
+}
+
+section.camo-about .container .row.bg-white{
+    border-radius: 50px;   
+     padding: 30px 20px 30px 50px !important;
+}
+
+section.camo-about .image-side-camo .top-section .cards-top{
+    height: 260px;
+    border-radius: 40px;
+    width: 49% !important;
+    padding: 15px 20px;
+    /* border: 1px solid red; */
+}
+
+section.camo-about .image-side-camo .col-12 {
+    height: 450px;
+    border-radius: 40px;
+    /* border: 1px solid red; */
+    padding: 0;
+}
+
+section.camo-about .col-6 .icon .first p {
+    font-size: 11px;
+}
+
+section.camo-about .icon .second {
+    font-size: 50px;
 }

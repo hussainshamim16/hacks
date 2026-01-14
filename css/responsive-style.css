@@ -1,0 +1,156 @@
+@media (max-width: 1450px) {
+    .camo-hero .content {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:1439px) {
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* header */
+    header.camo-navbar .navbar {
+        padding: 0 !important;
+    }
+
+    .camo-navbar .camo-btn-primary {
+        gap: 0 !important;
+        padding: 5px 10px !important;
+        font-size: 11px;
+    }
+
+    .camo-navbar .camo-btn-primary img {
+        width: 15px !important;
+    }
+
+    .camo-navbar li.nav-item {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .camo-navbar .navbar-expand-lg .navbar-nav {
+        gap: 0 !important;
+    }
+
+    /* Hero Section */
+    .camo-hero h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* about section */
+
+    section.camo-about .container .row.bg-light {
+        padding: 30px 10px 30px 20px !important;
+    }
+
+    section.camo-about p {
+        font-size: 13px;
+    }
+
+    section.camo-about h4 {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    section.camo-about .image-side-camo .top-section .cards-top {
+        padding: 20px 20px !important;
+        height: auto !important;
+    }
+
+    section.camo-about .container .row .icon svg {
+        height: 50px;
+        width: 50px;
+    }
+
+    section.camo-about .container .row .icon {
+        gap: 10px !important;
+    }
+
+    section.camo-about .icon .first p {
+        font-size: 8px;
+    }
+
+    section.camo-about .icon .second {
+        font-size: 40px;
+    }
+
+    section.camo-about .image-side-camo .col-12 {
+        height: auto;
+    }
+
+    /* footer */
+    .email-footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:1023px) {
+
+    /*  */
+    section.camo-about .image-side-camo .top-section .cards-top {
+        height: auto !important;
+        width: 100% !important;
+        padding: 1px 20px;
+        /* border: 1px solid red; */
+    }
+
+    /* header */
+    header.camo-navbar .navbar {
+        padding: 20px 15px 20px 15px !important;
+    }
+
+    .camo-navbar .camo-btn-primary {
+        gap: 5px !important;
+        padding: 5px 5px 5px 20px !important;
+        font-size: 16px;
+    }
+
+    .camo-navbar .navbar-expand-lg .navbar-nav {
+        gap: 10px !important;
+    }
+
+    .camo-navbar li.nav-item {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .camo-navbar .camo-btn-primary img {
+        width: 20px !important;
+    }
+
+    /* hero section */
+    .camo-hero h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* about */
+    section.camo-about .container .row.bg-white {
+        padding: 40px 20px 40px 30px !important;
+    }
+
+
+}
+
+@media (min-width:1950px) {}
+
+@media screen and (min-width: 990px) {}
+
+@media (max-width:768px) {}
+
+@media (max-width: 577px) {
+
+    /* about */
+    section.camo-about .container .row.bg-white {
+        padding: 40px 10px 10px 10px !important;
+    }
+    section.camo-about h4 {
+        font-size: 11px;
+    }
+}
