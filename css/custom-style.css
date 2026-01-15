@@ -82,6 +82,7 @@
     --brand-primary: #14357A;
     /* Navy-based trust color (good for pressure washing) */
     --brand-accent: #FC621A;
+    --slider-color: #05327F;
     /* Orange (contrast punch) */
 
     /* brand support */
@@ -436,13 +437,13 @@ button:not(.collapsed)::after {
     display: flex;
     flex-shrink: 0;
     min-width: 100%;
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 25s linear infinite;
 }
 
 
 @keyframes scroll-left {
     0% {
-        transform: translateX(50%);
+        transform: translateX(10%);
     }
 
     100% {
@@ -459,8 +460,8 @@ button:not(.collapsed)::after {
 }
 
 .bubble-img {
-    width: clamp(80px, 12vw, 160px);
-    height: auto;
+    width: 100%;
+    height: 100px;
 }
 
 
@@ -476,8 +477,6 @@ button:not(.collapsed)::after {
     background-color: #fff;
     opacity: 0.7;
 }
-
-
 /* ----------------------------------------------------------------------USMAN SECTION 6------------------------------ */
 
 
@@ -547,3 +546,69 @@ button:not(.collapsed)::after {
     cursor: pointer;
 }
 
+/* services slider css */
+section.services-slider {
+    overflow: hidden;
+}
+
+section.services-slider .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+section.services-slider .swiper-wrapper .swiper-slide {
+    background: var(--color-white);
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: left;
+    padding: 12px;
+    height: 560px;
+    max-height: 560px;
+    transition: 0.5s ease;
+}
+
+section.services-slider .swiper-slide img {
+    width: 100%;
+    height: 455px;
+    object-fit: cover;
+    border-radius: 39px;
+    transition: 0.5s ease;
+}
+
+section.services-slider .swiper-wrapper .content {
+    padding: 30px 15px;
+}
+
+section.services-slider .swiper-wrapper .content h4 {
+    color: var(--text-primary);
+    font-size: 30px;
+    margin-bottom: 100px !important;
+}
+
+section.services-slider .swiper-wrapper .content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-white);
+}
+
+section.services-slider .swiper-wrapper .content .learnMoreLink {
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: var(--brand-accent);
+}
+
+section.services-slider .swiper-wrapper .swiper-slide:hover {
+    background-color: var(--slider-color);
+}
+section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide img {
+    height: 320px;
+}
+section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide h4 {
+    color: var(--color-white);
+}
+
+section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .content h4 {
+    margin-bottom: 15px !important;
+}
