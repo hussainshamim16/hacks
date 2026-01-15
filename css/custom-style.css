@@ -274,12 +274,6 @@ header.camo-navbar .navbar {
 
 /* Hero Section */
 .camo-hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     z-index: -1;
 }
 
@@ -303,14 +297,11 @@ section.camo-about .image-side-camo .top-section .cards-top {
     border-radius: 40px;
     width: 49% !important;
     padding: 15px 20px;
-    /* border: 1px solid red; */
 }
 
 section.camo-about .image-side-camo .col-12 {
     height: 450px;
     border-radius: 40px;
-    /* border: 1px solid red; */
-    padding: 0;
 }
 
 section.camo-about .col-6 .icon .first p {
@@ -421,15 +412,7 @@ button:not(.collapsed)::after {
 /* usman code */
 
 /* -------------------------------------------------------------------------USMAN SECTION 3 TAGLINE ------------------------- */
-.marquee-section {
-    overflow: hidden;
-    background-color: transparent;
-    width: 100%;
-}
-
 .marquee-container {
-    display: flex;
-    overflow: hidden;
     user-select: none;
 }
 
@@ -495,9 +478,6 @@ button:not(.collapsed)::after {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.2rem;
 }
 
@@ -547,16 +527,6 @@ button:not(.collapsed)::after {
 }
 
 /* services slider css */
-section.services-slider {
-    overflow: hidden;
-}
-
-section.services-slider .swiper {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-}
-
 section.services-slider .swiper-wrapper .swiper-slide {
     background: var(--color-white);
     border-radius: 50px;
@@ -612,3 +582,38 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide h4 {
 section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .content h4 {
     margin-bottom: 15px !important;
 }
+
+
+/* --------------------------------------------------------------------USMAN SECTION 7 ARTICLES------------------------------- */
+.art {
+    background-color: #19AAC73B;
+    color: #19AAC7;
+
+}
+
+.art-h4 {
+    color: #1B2A41;
+}
+
+.camo-btn-dark {
+    background: linear-gradient(135deg, #26419C 50%, #19ABC8);
+    color: var(--color-white);
+}
+
+.camo-btn-dark svg rect {
+    fill: var(--color-white);
+}
+
+.camo-btn-dark svg path {
+    fill: var(--color-black);
+}
+
+.articon {
+    background-color: #143578;
+
+}
+
+.arrow-white {
+    filter: brightness(0) invert(1);
+}
+

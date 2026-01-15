@@ -190,7 +190,7 @@
     }
 
     .camo-hero img {
-        object-position: right;
+        object-position: right !important;
     }
 
     /* about */
