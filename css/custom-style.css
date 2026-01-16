@@ -395,6 +395,9 @@ section.camo-about .icon .second {
     transform: rotate(180deg);
     width: 33px;
     height: 33px;
+    background: url('data:image/svg+xml,<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16.9698" cy="16.9698" r="16.9698" fill="white"/><path d="M9.96985 16.9697H23.9698M23.9698 16.9697L16.9698 23.9697M23.9698 16.9697L16.9698 9.96973" stroke="black"%20stroke-linecap="round"%20stroke-linejoin="round"/></svg>') !important;
+    background-repeat: no-repeat !important;
+
 }
 
 button:not(.collapsed)::after {
@@ -420,7 +423,7 @@ button:not(.collapsed)::after {
     display: flex;
     flex-shrink: 0;
     min-width: 100%;
-    animation: scroll-left 25s linear infinite;
+    animation: scroll-left 35s linear infinite;
 }
 
 
@@ -460,6 +463,7 @@ button:not(.collapsed)::after {
     background-color: #fff;
     opacity: 0.7;
 }
+
 /* ----------------------------------------------------------------------USMAN SECTION 6------------------------------ */
 
 
@@ -572,9 +576,11 @@ section.services-slider .swiper-wrapper .content .learnMoreLink {
 section.services-slider .swiper-wrapper .swiper-slide:hover {
     background-color: var(--slider-color);
 }
+
 section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide img {
     height: 320px;
 }
+
 section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide h4 {
     color: var(--color-white);
 }
@@ -595,11 +601,6 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .conten
     color: #1B2A41;
 }
 
-.camo-btn-dark {
-    background: linear-gradient(135deg, #26419C 50%, #19ABC8);
-    color: var(--color-white);
-}
-
 .camo-btn-dark svg rect {
     fill: var(--color-white);
 }
@@ -617,3 +618,50 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .conten
     filter: brightness(0) invert(1);
 }
 
+/* ----------------------------------------------------------------------------USMAN BENEFITS SECTION -----------------------------*/
+.camo-benefits .bubble-img--benafits {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    width: 40%;
+}
+
+
+
+.camo-benefits .benefit-item {
+    margin-bottom: 60px;
+}
+
+
+.camo-benefits .stick-one {
+    top: 30px;
+    left: 50px;
+}
+
+.camo-benefits .stick-two {
+    top: 30px;
+    right: 50px;
+
+}
+
+.camo-benefits .benefit-title {
+    font-weight: 800;
+    color: #233142;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.camo-benefits .benefit-text {
+    max-width: 250px;
+}
+
+@media (max-width: 991px) {
+    .camo-benefits .stick {
+        display: none;
+    }
+}

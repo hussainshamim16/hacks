@@ -16,5 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
             1300: { slidesPerView: 3.1, spaceBetween: 20 }
         }
     });
+
+
+    AOS.init({ offset: 120, delay: 0, duration: 800 });
 });
 

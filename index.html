@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home || Camo Pressure Washing</title>
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/custom-style.css">
@@ -90,10 +91,11 @@
     <!-- ----------------------------------------------------------Home----------------------- -->
     <main class="home">
         <section class="camo-hero position-relative w-100 vh-100 overflow-hidden">
-            <img src="./public/hero-main.png" alt="Hero Image" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+            <img src="./public/hero-main.png" alt="Hero Image"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
             <div class="container h-100">
                 <div class="row flex-column justify-content-center h-100 align-items-start">
-                    <div class="content col-lg-6">
+                    <div class="content col-lg-6" data-aos="fade-up">
                         <h1 class="text-white">Trusted Pressure Washing Experts Serving Columbia, Spring Hill &
                             Franklin, TN</h1>
                         <p class="text-white my-4">Camo Pressure Washing delivers reliable, high-quality pressure
@@ -116,11 +118,11 @@
                 </div>
             </div>
         </section>
-        <!-- about -->
+        <!-- ---------------------------------------------------------------About---------------------------- -->
         <section class="camo-about" style="background: url(./public/about-image.png) center/cover no-repeat;">
             <div class="container py-5">
                 <div class="p-2 row bg-white align-items-center justify-content-between gap-4 gap-md-0">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up">
                         <h4 class="camo-sub-heading d-flex gap-3 mb-md-4 mb-4 ">
                             <div class="camo-sub-heading-after"></div>
                             <span class="text-uppercase">About Camo Pressure Washing</span>
@@ -147,7 +149,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-md-6 text-end image-side-camo">
+                    <div class="col-md-6 text-end image-side-camo" data-aos="fade-up">
                         <div class="row justify-content-between gap-2 top-section">
                             <div class="col-lg-5 cards-top"
                                 style="background: url(./public/ab-top-1.png) center/cover no-repeat;">
@@ -193,14 +195,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="./public/ab-2.png" alt="about-image" class="col-12 img-fluid object-fit-cover p-0">
+                            <img src="./public/ab-2.png" alt="about-image"
+                                class="col-12 img-fluid object-fit-cover p-0">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ---------------------------------------------------------------SECTION 3---------------------------- -->
-        <section class="camo-tagline marquee-section overflow-hidden bg-transparent w-100">
+        <!-- ---------------------------------------------------------------Camo marquee---------------------------- -->
+        <section class="camo-tagline marquee-section overflow-hidden bg-transparent w-100" data-aos="fade-in">
             <div class="marquee-container overflow-hidden d-flex">
                 <div class="marquee-content d-flex align-items-center">
 
@@ -226,10 +229,10 @@
                 </div>
             </div>
         </section>
-        <!-- slider -->
+        <!-- ---------------------------------------------------------------Services Slider---------------------------- -->
         <section class="services-slider camo-margin-top overflow-hidden">
             <div class="container services-slider-wrapper">
-                <div class="row justify-content-between mb-4">
+                <div class="row justify-content-between mb-4" data-aos="fade-up">
                     <h2 class="col-md-6">
                         Our Camo Pressure Washing Services
                     </h2>
@@ -241,7 +244,7 @@
                 </div>
                 <!-- Swiper -->
                 <div class="swiper camo-services-slider h-100 w-100 overflow-visible">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" data-aos="fade-up">
                         <div class="swiper-slide">
                             <a href="#">
                                 <img decoding="async" src="./public/servicesOne.png" alt="servicesOne.png">
@@ -326,14 +329,110 @@
                 </div>
             </div>
         </section>
+        <!-- -----------------------------------------------------------------SECTION BENIFITS---------------------- -->
+        <section class="camo-benefits py-5 text-center camo-margin-top ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-4">Benefits of Camo <br> Pressure Washing</h2>
+                        <p class="mx-auto  mb-5">
+                            At Camo Pressure Washing, we help homeowners and businesses across Columbia, Spring Hill,
+                            and Franklin, TN maintain cleaner, safer, and more attractive properties. The benefits of
+                            pressure washing go far beyond surface-level cleaning—delivering long-term protection,
+                            value, and peace of mind.
+                        </p>
+                    </div>
+                </div>
+                <div class="features-wrapper  position-relative">
+                    <img class="bubble-img--benafits img-fluid " src="./public/benfitbubble.webp"
+                        style=" background-repeat: no-repeat; background-position: center; background-size: cover; position: absolute;"
+                        alt="bubble.img">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 text-lg-start d-flex flex-column align-items-lg-start">
+
+                            <div class="benefit-item benefit-icon position-relative">
+                                <img class="position-absolute stick-one stick" src="./public/bubblestick1.webp" alt="">
+                                <div class="icon-circle bg-orange mb-4   ">
+                                    <img class="img-fluid p-2 " src="./public/benefiticon6.svg" alt="">
+                                </div>
+                                <div class="benefit-title">Enhances Curb Appeal</div>
+                                <div class="benefit-text ms-lg-auto">Removes dirt and stains to instantly refresh your
+                                    property's appearance.</div>
+                            </div>
+                            <div class="benefit-item benefit-icon position-relative">
+                                <img class="position-absolute stick-one stick " src="./public/bubblestick1.webp" alt="">
+                                <div class="icon-circle bg-orange mb-4 ">
+                                    <img class="img-fluid p-2 " src="./public/benefiticon4.svg" alt="">
+                                </div>
+                                <div class="benefit-title">Prevents Surface Damage</div>
+                                <div class="benefit-text ms-lg-auto">Eliminates mold and buildup that can harm exterior
+                                    surfaces.</div>
+                            </div>
+                        </div>
 
 
+                        <div class="col-lg-6 text-lg-end d-flex flex-column align-items-lg-end mt-">
+                            <div class="benefit-item benefit-icon position-relative ">
+                                <img class="position-absolute stick-two stick " src="./public/bubblestick4.webp" alt="">
+                                <div class="icon-circle bg-orange mb-4   ms-auto">
+                                    <img class="img-fluid p-2 " src="./public/benefiticon3.svg" alt="">
+                                </div>
+                                <div class="benefit-title">Increases Property Value</div>
+                                <div class="benefit-text">A clean exterior helps maintain and increase property value.
+                                </div>
+                            </div>
+                            <div class="benefit-item  benefit-icon position-relative">
+                                <img class="position-absolute stick-two stick " src="./public/bubblestick4.webp" alt="">
+                                <div class="icon-circle bg-orange mb-4 ms-auto">
+                                    <img class="img-fluid p-2 " src="./public/benefiticon5.svg" alt="">
+                                </div>
+                                <div class="benefit-title">Promotes Health & Safety</div>
+                                <div class="benefit-text">Removes slippery algae, mold, and allergens from surfaces.
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- local pressure washing -->
+                    </div>
+                </div>
+                <div class="d-flex gap-3 flex-column mt-lg-5 flex-lg-row mb-4 mb-lg-0 mt-5 align-items-center justify-content-center">
+                            <a href="#" class="camo-btn camo-btn-dark border-0 gap-3 text-decoration-none ps-4 pe-3 py-2 d-flex align-items-center justify-content-between">
+                                Get Free Estimate
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="44" height="44" rx="22" fill="#F86019"></rect>
+                                    <path d="M29.5303 22.5303C29.8232 22.2374 29.8232 21.7626 29.5303 21.4697L24.7574 16.6967C24.4645 16.4038 23.9896 16.4038 23.6967 16.6967C23.4038 16.9896 23.4038 17.4645 23.6967 17.7574L27.9393 22L23.6967 26.2426C23.4038 26.5355 23.4038 27.0104 23.6967 27.3033C23.9896 27.5962 24.4645 27.5962 24.7574 27.3033L29.5303 22.5303ZM14 22L14 22.75L29 22.75L29 22L29 21.25L14 21.25L14 22Z" fill="#FFFEFE"></path>
+                                </svg>
+                            </a>
+
+                            <a href="tel:+19319823710" class="camo-btn camo-btn-primary border-0 gap-3 text-decoration-none ps-4 pe-3 py-2 d-flex align-items-center justify-content-between">
+                                <img src="assets/call.svg" alt="arrow">
+                                <span class="ms-2">+1 931-982-3710</span>
+                                <span class="arrow-icon p-3 ms-2 rounded-5  "><img src="assets/arrow.svg" alt="arrow"></span>
+                            </a>
+                        </div>
+                <!-- <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-5">
+                    <a href=" "
+                        class=" border-0 px-2 py-2 text-decoration-none rounded-4 d-inline-flex align-items-center camo-btn-dark  object-fit-contain">
+                        <span class="ms-2">Get Free Estimates</span>
+                        <span class="arrow-icon p-3 ms-2 rounded-5  ">
+                            <img src="assets/arrow.svg" alt="arrow">
+                        </span>
+                    </a>
+                    <a href="tel:+19319823710"
+                        class="btn-call border-0 px-1 py-2 text-decoration-none px-4 py-2 rounded-4 d-flex align-items-center ">
+                        <img src="assets/call.svg" alt="arrow">
+                        <span class="ms-2">+1 931-982-3710</span>
+                        <span class="arrow-icon p-3 ms-2 rounded-5  "><img src="assets/arrow.svg" alt="arrow"></span>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- ---------------------------------------------------------------local pressure washing ---------------------------- -->
         <section class="camo-five d-flex align-items-center camo-margin-top"
             style="background: url('./public/local-servicesnear.png') center/cover no-repeat;">
 
-            <div class="container py-5">
+            <div class="container py-5" data-aos="fade-up">
 
 
                 <div class="row">
@@ -401,8 +500,9 @@
 
             </div>
         </section>
+        <!-- ---------------------------------------------------------------Why Choose Camo Card---------------------------- -->
         <section class="py-5 camo-six camo-margin-top">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center mb-5 ">
                     <div class="col-md-8 text-center">
                         <h2 class="display-5 fw-semibold . ">Why Choose Camo <br> Pressure Washing</h2>
@@ -423,7 +523,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 ">
-                        <div class=" h-100 border-0  p-4  rounded-5 bg-white camo-six-card">
+                        <div class=" h-100 border-0  p-4  rounded-5 shadow-sm bg-white camo-six-card">
                             <div class="icon-circle mb-4 bg-orange d-flex align-items-center justify-content-center">
                                 <img class="img-fluid p-2" src="./public/icon3.svg" alt="">
                             </div>
@@ -434,7 +534,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 ">
-                        <div class=" h-100 border-0  p-4  rounded-5 bg-white camo-six-card">
+                        <div class=" h-100 border-0  p-4  rounded-5 shadow-sm bg-white camo-six-card">
                             <div class="icon-circle mb-4 bg-orange d-flex align-items-center justify-content-center">
                                 <img class="img-fluid p-2" src="./public/icon2.svg" alt="">
                             </div>
@@ -445,7 +545,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-3 ">
-                        <div class=" h-100 border-0  p-4  rounded-5 bg-white camo-six-card">
+                        <div class=" h-100 border-0  p-4  rounded-5 shadow-sm bg-white camo-six-card">
                             <div class="icon-circle mb-4 bg-orange d-flex align-items-center justify-content-center">
                                 <img class="img-fluid p-2" src="./public/Like.svg" alt="">
                             </div>
@@ -458,9 +558,9 @@
                 </div>
             </div>
         </section>
-         <!-- --------------------------------------------------------------------SECTION 7----------------------------- -->
+        <!-- --------------------------------------------------------------------Artical Cards----------------------------- -->
         <section class="camo-margin-top py-5" style=" background-color: #14357A;">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center mb-5 ">
                     <div class="col-md-8 text-center">
                         <h2 class="display-5 fw-semibold text-white ">Articles/Projects</h2>
@@ -494,7 +594,8 @@
                             </div>
                             <div class="px-4 p-2">
                                 <a class=" art px-4 py-2 text-decoration-none rounded-5" href="">Articles</a>
-                                <h4 class="pt-3 pb-5 mb-0">Unveiling the Truth: How Much Should You Really Pay for Pressure Washing Services?</h4>
+                                <h4 class="pt-3 pb-5 mb-0">Unveiling the Truth: How Much Should You Really Pay for
+                                    Pressure Washing Services?</h4>
                                 <a href=" "
                                     class=" border-0 px-2 py-2 text-decoration-none rounded-4 d-inline-flex align-items-center camo-btn-dark  object-fit-contain">
                                     <span class="ms-2">Read Post</span>
@@ -512,7 +613,8 @@
                             </div>
                             <div class="px-4 p-2">
                                 <a class=" art px-4 py-2 text-decoration-none rounded-5" href="">Articles</a>
-                                <h4 class="pt-3 pb-5 mb-0">Raleigh Winter Home Maintenance: Protect Your Home from the Cold</h4>
+                                <h4 class="pt-3 pb-5 mb-0">Raleigh Winter Home Maintenance: Protect Your Home from the
+                                    Cold</h4>
                                 <a href=" "
                                     class=" border-0 px-2 py-2 text-decoration-none rounded-4 d-inline-flex align-items-center camo-btn-dark  object-fit-contain">
                                     <span class="ms-2">Read Post</span>
@@ -540,9 +642,9 @@
             </div>
 
         </section>
-        <!-- services areas section -->
+        <!-- --------------------------------------------------------------------services areas section----------------------------- -->
         <section class="town-we-wash camo-margin-top">
-            <div class="town-we-wash-container container">
+            <div class="town-we-wash-container container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="town-we-wash-title mb-5 py-4">Towns We Wash</h2>
@@ -609,7 +711,7 @@
                     </div>
 
 
-                    <div class="map-of-towns">
+                    <div class="map-of-towns" data-aos="fade-up">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.1069751003556!2d-87.20647412450613!3d35.551060137114156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88636abf3cc26669%3A0x72f79443697a98e8!2s500%20Mockingbird%20Dr%2C%20Mt%20Pleasant%2C%20TN%2038474%2C%20USA!5e0!3m2!1sen!2s!4v1768399105645!5m2!1sen!2s"
                             width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
@@ -619,13 +721,13 @@
 
             </div>
         </section>
-        <!-- sami sectio faq -->
+        <!-- --------------------------------------------------------------------Faq Section----------------------------- -->
         <section class="faq-section camo-margin-top mb-5">
             <div class="faq-section-wrapper container">
 
                 <div class="row">
 
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-up">
 
                         <h2 class="mb-5">Frequently Asked Questions</h2>
 
@@ -653,11 +755,28 @@
 
                     </div>
 
-                    <div class="col-lg-7">
-
+                    <div class="col-lg-7" data-aos="fade-up">
                         <div>
                             <div class="accordion custom-accordion" id="faqAccordion">
 
+                                <!-- ITEM 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true">
+                                            Is pressure washing safe for my property?
+
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show"
+                                        data-bs-parent="#faqAccordion" style="">
+                                        <div class="accordion-body">
+                                            Yes. We use professional equipment and proven techniques to safely clean all
+                                            surfaces without
+                                            causing damage.
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- ITEM 1 -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
@@ -672,23 +791,6 @@
 
                                     <div id="collapseOne" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" style="">
-                                        <div class="accordion-body">
-                                            Yes. We use professional equipment and proven techniques to safely clean all
-                                            surfaces without
-                                            causing damage.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- ITEM 2 -->
-                               <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true">
-                                            Is pressure washing safe for my property?
-
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" style="">
                                         <div class="accordion-body">
                                             Yes. We use professional equipment and proven techniques to safely clean all
                                             surfaces without
@@ -830,14 +932,14 @@
         <div class="container">
 
             <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary border-25">
-                <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-up">
                     <h2 class="fw-semibold text-white mb-0 ">Ready For A Clean Home? <br> Contact Us Today For
                         A
                         <br>
                         Free Estimate!
                     </h2>
                 </div>
-                <div class="col-lg-5 mt-4 ">
+                <div class="col-lg-5 mt-4" data-aos="fade-up">
                     <p class="mb-4  small text-white">Whether you're in Columbia, Spring Hill, and Franklin, TN, or the
                         surrounding areas, we're ready to roll up our sleeves and bring the clean – with a smile! We're
                         here to make your world a little brighter and a lot cleaner!</p>
@@ -854,7 +956,7 @@
                 </div>
             </div>
 
-            <div class="row gy-4">
+            <div class="row gy-4" data-aos="fade-up">
                 <div class="col-lg-3 col-md-6">
                     <img src="assets/footer.svg" alt="Camo Logo" class="mb-4" style="max-width: 160px;">
                     <p class="small  pe-lg-4 text-white">Our Camo Pressure Washing Promise is a 100% guarantee on the
@@ -952,6 +1054,7 @@
 
 
 
+    <script src="./javscript/aos.js"></script>
     <script src="./javscript/swiper.js"></script>
     <script src="./javscript/bootstrap.js"></script>
     <script src="./javscript/apps.js"></script>
