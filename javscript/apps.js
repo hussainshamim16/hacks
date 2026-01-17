@@ -17,7 +17,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    let testimonailSlider = new Swiper(".testimonailSlider", {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        // initialSlide: 1.5,
+        // centeredSlides: false,
+        // autoplay: true,
+        loop: false,
+        // rewind: true,
+        // loop: true,
+        pagination: {
+            el: ".testimonial-pagination",
+            dynamicBullets: true,
+        },
+        grabCursor: true,
+        breakpoints: {
+            0: { slidesPerView: 1, spaceBetween: 16 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 2.5, spaceBetween: 20 },
+            1300: { slidesPerView: 3.6, spaceBetween: 20, initialSlide: 1, }
+        }
 
+    });
     AOS.init({ offset: 120, delay: 0, duration: 800 });
 });
 

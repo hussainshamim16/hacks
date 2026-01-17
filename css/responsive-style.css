@@ -2,6 +2,7 @@
     .combo-text {
         font-size: 130px;
     }
+
     .bubble-img {
         height: 300px !important;
     }
@@ -9,7 +10,7 @@
 
 @media (max-width: 1450px) {
     .camo-hero .content {
-        padding-top: 150px;
+        padding-top: 70px;
     }
 }
 
@@ -144,14 +145,29 @@
         padding: 40px 20px 40px 30px !important;
     }
 
+    /* testimonial slider */
+    .camo-testimonials .swiper-slide {
+        min-height: 450px;
+    }
 
 }
 
 @media (min-width:1950px) {}
 
-@media screen and (min-width: 990px) {}
+@media screen and (max-width: 990px) {
+    .camo-benefits .stick {
+        display: none;
+    }
+}
 
-@media (max-width:768px) {}
+@media (max-width:768px) {
+
+    /* scroll trigger */
+    .center-scroll-down-icon {
+        transform: translateY(-80px);
+        margin-bottom: -90px;
+    }
+}
 
 @media (max-width: 577px) {
 
@@ -248,4 +264,22 @@
         font-size: 20px;
     }
 
+    /* scroll trigger */
+    .center-scroll-down-icon {
+        transform: translateY(-60px);
+        margin-bottom: -65px;
+    }
+
+    .center-scroll-down-icon .scroll-down-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .center-scroll-down-icon a {
+        font-size: 13px;
+    }
+
+    .camo-hero {
+        padding-bottom: 80px;
+    }
 }
