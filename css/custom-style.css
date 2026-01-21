@@ -213,22 +213,27 @@ header.camo-navbar .navbar {
     background: linear-gradient(90deg, #ff6a00, #b34500);
     color: var(--neutral-white);
 }
+
 .camo-btn-primary:hover {
     background: black;
 }
+
 .camo-btn-secondery {
     background: var(--color-white);
     color: var(--text-btn-primary);
 }
+
 .camo-btn-secondery:hover {
     background: transparent;
     color: white;
     border: 1px solid white !important;
 }
-.camo-btn-secondery:hover.camo-btn-secondery svg rect{
+
+.camo-btn-secondery:hover.camo-btn-secondery svg rect {
     fill: white;
 }
-.camo-btn-secondery:hover.camo-btn-secondery svg path{
+
+.camo-btn-secondery:hover.camo-btn-secondery svg path {
     fill: black;
 }
 
@@ -250,6 +255,16 @@ header.camo-navbar .navbar {
     background: var(--neutral-white);
     color: var(--brand-accent);
     font-size: 10px;
+}
+
+/* active checker */
+/* #main-menu .nav-item.active {
+    list-style: disc;
+    color: var(--brand-accent);
+} */
+
+#main-menu .nav-item.active a {
+    color: var(--brand-accent) !important;
 }
 
 
@@ -581,6 +596,7 @@ section.services-slider .swiper-wrapper .content p {
     color: var(--color-white);
 }
 
+section.services-card-section .services-card-wrapper-for-page .content .learnMoreLink,
 section.services-slider .swiper-wrapper .content .learnMoreLink {
     font-size: 18px;
     line-height: 18px;
@@ -764,9 +780,10 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .conten
 }
 
 /* camo-repeatable-hero  */
-.camo-repeatable-hero{
+.camo-repeatable-hero {
     height: 85vh;
-} 
+}
+
 /* --------------------------------------------------------------------------------SECTION TWO MISSION-------------------------- */
 section.camo-mission .container {
     border-radius: 50px;
@@ -775,17 +792,20 @@ section.camo-mission .container {
 section.camo-mission .image {
     background-color: #CAF6FF;
     border-radius: 46px;
-    padding: 45px  !important;
+    padding: 45px !important;
 }
+
 /* -----------------------------------------------------------------SECTION 3 OUR VLAUES SLIDER---------------------------- */
 .valuesSlider .swiper {
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide .camo-six-card {
     height: 400px !important;
 
 }
+
 .valuesSlider .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -793,11 +813,161 @@ section.camo-mission .image {
     justify-content: center;
     align-items: center;
 }
+
 .valuesSlider .swiper-slide img {
     display: block;
     width: 100%;
     object-fit: cover;
 }
+
 .valuesSlider .icon-circle {
     padding: 12px;
+}
+
+/* services cards */
+section.services-card-section .services-card-wrapper-for-page .services-card {
+    background: var(--color-white);
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: left;
+    padding: 12px;
+    height: 600px;
+    max-height: 600px;
+    transition: 0.5s ease;
+    width: 32.5%;
+    cursor: pointer;
+}
+
+section.services-card-section .services-card-wrapper-for-page .services-card img {
+    height: 320px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+section.services-card-section .services-card-wrapper-for-page .content {
+    padding: 15px 0px 5px 15px;
+}
+
+section.services-card-section .services-card-wrapper-for-page .services-card:hover {
+    background-color: var(--slider-color);
+}
+
+section.services-card-section .services-card-wrapper-for-page .services-card:hover * {
+    color: var(--color-white);
+}
+
+/* prosses circul */
+.process-circle {
+    background: var(--color-white);
+    border-radius: 50%;
+    padding: 30px 10px;
+    width: 25%;
+}
+
+.process-circle h5 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.process-circle p {
+    width: 80%;
+    font-size: 12px;
+}
+/* camo-service-intro */
+.camo-service-intro .container{
+    border-radius: 50px;
+}
+
+/* contact form ui */
+.camo-contact .contact-left .parf-of-img{
+min-height: 900px; height: auto;
+}
+
+/* contact form ui */
+.camo-contact .contact-left .parf-of-img{
+min-height: -webkit-fill-available; height: auto;
+}
+/* contact form 7 ui  */
+.cf7-custom-wrapper {
+    background: #C8EEF3; /* screenshot wala aqua */
+    padding: 40px;
+    border-radius: 40px;
+    font-family: inherit;
+}
+
+.cf7-custom-wrapper .row {
+    display: flex;
+    gap: 30px;
+}
+
+.cf7-custom-wrapper .col {
+    flex: 1;
+}
+
+.cf7-custom-wrapper label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+
+.cf7-custom-wrapper input,
+.cf7-custom-wrapper textarea,
+.cf7-custom-wrapper select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 6px 0;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+}
+
+.cf7-custom-wrapper textarea {
+    min-height: 120px;
+}
+
+.cf7-custom-wrapper input::placeholder,
+.cf7-custom-wrapper textarea::placeholder,
+.cf7-custom-wrapper select {
+    color: rgba(0,0,0,0.4);
+}
+
+.cf7-custom-wrapper select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23000'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+}
+
+.cf7-custom-wrapper .btn-row {
+    margin-top: 30px;
+}
+
+.cf7-custom-wrapper input[type=submit] {
+    background: linear-gradient(90deg, #F15621 0%, #CC4B1D 100%) !important;
+    padding: 12px 24px !important;
+    border-radius: 20px !important;
+    border: none !important;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cf7-custom-wrapper input[type=submit]:hover {
+    opacity: .9;
+}
+.cf7-custom-wrapper input, .cf7-custom-wrapper textarea, .cf7-custom-wrapper select {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0px !important;
+    border-bottom: 1px solid #8D8D8D !important;
+    padding-left: 0 !important;
+}
+.form-control:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input[type=color]:focus, .wpcf7 input[type=date]:focus, .wpcf7 input[type=datetime-local]:focus, .wpcf7 input[type=datetime]:focus, .wpcf7 input[type=email]:focus, .wpcf7 input[type=file]:focus, .wpcf7 input[type=month]:focus, .wpcf7 input[type=number]:focus, .wpcf7 input[type=range]:focus, .wpcf7 input[type=search]:focus, .wpcf7 input[type=submit]:focus, .wpcf7 input[type=tel]:focus, .wpcf7 input[type=text]:focus, .wpcf7 input[type=time]:focus, .wpcf7 input[type=url]:focus, .wpcf7 input[type=week]:focus, .wpcf7 select:focus, .wpcf7 textarea:focus{
+    box-shadow: none !important;
+}
+.wpcf7 .wpcf7-form p {
+    margin-bottom: 1.2rem;
 }
