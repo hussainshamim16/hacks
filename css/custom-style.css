@@ -762,3 +762,42 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .conten
     width: 70px;
     height: 70px;
 }
+
+/* camo-repeatable-hero  */
+.camo-repeatable-hero{
+    height: 85vh;
+} 
+/* --------------------------------------------------------------------------------SECTION TWO MISSION-------------------------- */
+section.camo-mission .container {
+    border-radius: 50px;
+}
+
+section.camo-mission .image {
+    background-color: #CAF6FF;
+    border-radius: 46px;
+    padding: 45px  !important;
+}
+/* -----------------------------------------------------------------SECTION 3 OUR VLAUES SLIDER---------------------------- */
+.valuesSlider .swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide .camo-six-card {
+    height: 400px !important;
+
+}
+.valuesSlider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valuesSlider .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.valuesSlider .icon-circle {
+    padding: 12px;
+}
