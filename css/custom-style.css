@@ -1,5 +1,6 @@
 /* ############################## Font's start ##################### */
 /* Fonts For Heading */
+
 @font-face {
     font-family: 'plus-jakarta-sans';
     src: url('../fonts/plus-jakarta-sans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
@@ -187,11 +188,36 @@ a:active {
     line-height: 3px;
 }
 
+/*
+    Change icon in the Visual Composer page schematic representation (backend).
+    */
+.vc_element-icon,
+.vc_general.vc_element-icon {
+    background-image: url("../images/dev-vc-logo.png");
+    background-size: contain;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.wrapper {
+    padding: 0;
+}
+
+.vc_column_container {
+    min-height: 0px !important;
+}
 
 /* -----------------------------------------------------NAVBAR------------------------------ */
 header.camo-navbar .navbar {
     left: 50%;
     transform: translate(-50%, 10%);
+    z-index: 999;
+}
+
+header.camo-navbar .navbar-toggler {
+    background-color: var(--color-black);
 }
 
 
@@ -216,6 +242,7 @@ header.camo-navbar .navbar {
 
 .camo-btn-primary:hover {
     background: black;
+    color: white;
 }
 
 .camo-btn-secondery {
@@ -257,6 +284,10 @@ header.camo-navbar .navbar {
     font-size: 10px;
 }
 
+header.camo-navbar .nav-link {
+    color: var(--brand-primary) !important;
+}
+
 /* active checker */
 /* #main-menu .nav-item.active {
     list-style: disc;
@@ -267,7 +298,6 @@ header.camo-navbar .navbar {
     color: var(--brand-accent) !important;
 }
 
-
 /* -----------------------------------------------------------------FOOTER----------------------------------- */
 
 
@@ -275,7 +305,7 @@ header.camo-navbar .navbar {
 .social-icon {
     width: 38px;
     height: 38px;
-    border: 2px solid var(--neutral-white);
+    /* border: 2px solid var(--neutral-white); */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -290,8 +320,13 @@ header.camo-navbar .navbar {
     transform: translateY(-3px);
 }
 
+.footer-navigation li.menu-item a {
+    color: white;
+    text-decoration: none;
+}
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-navigation li.menu-item a:hover {
     color: var(--brand-accent) !important;
     padding-left: 5px;
 }
@@ -308,7 +343,7 @@ header.camo-navbar .navbar {
 }
 
 .camo-hero h1 {
-    font-size: 50px;
+    font-size: 58px;
     font-weight: 600;
 }
 
@@ -779,6 +814,10 @@ section.services-slider .swiper-wrapper .swiper-slide:hover.swiper-slide .conten
     height: 70px;
 }
 
+.camo-bloger img {
+    border-radius: 36px;
+}
+
 /* camo-repeatable-hero  */
 .camo-repeatable-hero {
     height: 85vh;
@@ -873,26 +912,26 @@ section.services-card-section .services-card-wrapper-for-page .services-card:hov
     width: 80%;
     font-size: 12px;
 }
+
 /* camo-service-intro */
-.camo-service-intro .container{
+.camo-service-intro .container {
     border-radius: 50px;
 }
 
 /* contact form ui */
-.camo-contact .contact-left .parf-of-img{
-min-height: 900px; height: auto;
+.camo-contact .contact-left .parf-of-img {
+    min-height: -webkit-fill-available;
+    height: auto;
 }
 
-/* contact form ui */
-.camo-contact .contact-left .parf-of-img{
-min-height: -webkit-fill-available; height: auto;
-}
 /* contact form 7 ui  */
 .cf7-custom-wrapper {
-    background: #C8EEF3; /* screenshot wala aqua */
+    background: #C8EEF3;
+    /* screenshot wala aqua */
     padding: 40px;
     border-radius: 40px;
     font-family: inherit;
+    border: 1px solid black;
 }
 
 .cf7-custom-wrapper .row {
@@ -917,7 +956,7 @@ min-height: -webkit-fill-available; height: auto;
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 6px 0;
     font-size: 14px;
     outline: none;
@@ -931,43 +970,83 @@ min-height: -webkit-fill-available; height: auto;
 .cf7-custom-wrapper input::placeholder,
 .cf7-custom-wrapper textarea::placeholder,
 .cf7-custom-wrapper select {
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
-.cf7-custom-wrapper select {
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23000'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 6px center;
-}
+
 
 .cf7-custom-wrapper .btn-row {
     margin-top: 30px;
 }
 
 .cf7-custom-wrapper input[type=submit] {
-    background: linear-gradient(90deg, #F15621 0%, #CC4B1D 100%) !important;
-    padding: 12px 24px !important;
-    border-radius: 20px !important;
+    text-decoration: none;
+    color: white !important;
     border: none !important;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .cf7-custom-wrapper input[type=submit]:hover {
     opacity: .9;
 }
-.cf7-custom-wrapper input, .cf7-custom-wrapper textarea, .cf7-custom-wrapper select {
+
+.cf7-custom-wrapper input,
+.cf7-custom-wrapper textarea,
+.cf7-custom-wrapper select {
     background: transparent !important;
     border: none !important;
     border-radius: 0px !important;
     border-bottom: 1px solid #8D8D8D !important;
     padding-left: 0 !important;
 }
-.form-control:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input[type=color]:focus, .wpcf7 input[type=date]:focus, .wpcf7 input[type=datetime-local]:focus, .wpcf7 input[type=datetime]:focus, .wpcf7 input[type=email]:focus, .wpcf7 input[type=file]:focus, .wpcf7 input[type=month]:focus, .wpcf7 input[type=number]:focus, .wpcf7 input[type=range]:focus, .wpcf7 input[type=search]:focus, .wpcf7 input[type=submit]:focus, .wpcf7 input[type=tel]:focus, .wpcf7 input[type=text]:focus, .wpcf7 input[type=time]:focus, .wpcf7 input[type=url]:focus, .wpcf7 input[type=week]:focus, .wpcf7 select:focus, .wpcf7 textarea:focus{
+
+.form-control:focus,
+.wpcf7 .wpcf7-validation-errors:focus,
+.wpcf7 input[type=color]:focus,
+.wpcf7 input[type=date]:focus,
+.wpcf7 input[type=datetime-local]:focus,
+.wpcf7 input[type=datetime]:focus,
+.wpcf7 input[type=email]:focus,
+.wpcf7 input[type=file]:focus,
+.wpcf7 input[type=month]:focus,
+.wpcf7 input[type=number]:focus,
+.wpcf7 input[type=range]:focus,
+.wpcf7 input[type=search]:focus,
+.wpcf7 input[type=submit]:focus,
+.wpcf7 input[type=tel]:focus,
+.wpcf7 input[type=text]:focus,
+.wpcf7 input[type=time]:focus,
+.wpcf7 input[type=url]:focus,
+.wpcf7 input[type=week]:focus,
+.wpcf7 select:focus,
+.wpcf7 textarea:focus {
     box-shadow: none !important;
 }
+
 .wpcf7 .wpcf7-form p {
     margin-bottom: 1.2rem;
+}
+
+.cf7-custom-wrapper select {
+    /* appearance: none; */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23000'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 6px center !important;
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    transform: translate(50px, 0px);
+    top: 20px;
+    left: auto;
+    right: 0;
+}
+
+.btn-row p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 5px !important;
+}
+
+.btn-row.camo-btn-primary {
+    padding: 7px 10px !important;
 }

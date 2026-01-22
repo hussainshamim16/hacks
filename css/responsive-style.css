@@ -228,6 +228,11 @@
         padding: 50px 10px;
         width: 40%;
     }
+    /* contact form */
+    .camo-contact .contact-left .parf-of-img {
+        min-height: 600px;
+        height: auto;
+    }
 }
 
 @media (min-width:1950px) {}
