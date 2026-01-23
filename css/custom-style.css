@@ -917,7 +917,9 @@ section.services-card-section .services-card-wrapper-for-page .services-card:hov
 .camo-service-intro .container {
     border-radius: 50px;
 }
-
+.camo-service-intro .image-side-camo img{
+    border-radius: 40px;
+}
 /* contact form ui */
 .camo-contact .contact-left .parf-of-img {
     min-height: -webkit-fill-available;
@@ -1049,4 +1051,65 @@ section.services-card-section .services-card-wrapper-for-page .services-card:hov
 
 .btn-row.camo-btn-primary {
     padding: 7px 10px !important;
+}
+
+section.camo-repeatable-hero.services-areas {
+    align-items: center !important;
+}
+
+section.camo-repeatable-hero.services-areas .row {
+    justify-content: center !important;
+}
+
+section.camo-repeatable-hero.services-areas .row .col-lg-7 {
+    text-align: center !important;
+}
+
+
+/* our services cards   */
+
+.storysec {
+    border-radius: 60px;
+    transform: translateY(-15%);
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: -100px;
+    min-height: fit-content;
+}
+
+.city-box img {
+    width: 100%;
+    object-fit: cover;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.city-box h2 {
+    font-size: 25px;
+    margin: 0 !important;
+    font-weight: 500;
+}
+
+.camo-services-areas-card {
+    background-color: #CAF6FF;
+    transition: 0.5s ease !important;
+}
+
+.camo-services-areas-card:hover {
+    background-color: var(--brand-primary);
+}
+
+.camo-services-areas-card:hover h2 {
+    color: white;
+}
+
+.storysec .row {
+    gap: 10px !important;
+}
+
+.services-areas-town-section .col-12.text-center{
+    display: none;
+}
+.services-areas-town-section {
+    margin-bottom: 80px !important;
 }
