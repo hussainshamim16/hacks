@@ -1113,3 +1113,64 @@ section.camo-repeatable-hero.services-areas .row .col-lg-7 {
 .services-areas-town-section {
     margin-bottom: 80px !important;
 }
+
+/* expert-pressure-section */
+.expert-pressure-section ul li{
+    color: var(--brand-accent);
+}
+
+.expert-pressure-section ul li h4{
+    font-size: 25px;
+    color: var(--color-white);
+}
+.expert-pressure-section ul li {
+    color: var(--brand-accent);
+    z-index: 1111;
+    font-size: 1.8rem;
+    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="%23FC621A"/></svg>') no-repeat;
+    padding-left: 35px;
+    list-style: none;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    z-index: 111 !important;
+    color: #454545;
+}
+.expert-pressure-section ul:before {
+    content: '';
+    border: 1px solid #ffffff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 0;
+}
+
+
+/* services inner curve Section */
+.curve-section{
+    padding-top: 90px;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.curve-section .arc-container {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    padding: 100px 20px 60px 20px;
+    position: relative;
+    border-top: 2px solid #e0f7fa;
+    box-shadow: 0 -90px 100px 20px rgba(25, 170, 199, 0.25);
+}
+
+
+.curve-section .floating-icon {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
