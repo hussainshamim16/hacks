@@ -1,0 +1,94 @@
+@media (max-width: 1200px) {
+    .page-width {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pro {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pro {
+        width: 100%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .az-form {
+        width: 100%;
+        max-width: 0 auto;
+    }
+
+    input {
+        padding: 10px 10px !important;
+    }
+}
+
+@media (max-width: 577px) {
+
+    nav .btns a,
+    nav .links a,
+    button {
+        font-size: 12px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+}
+
+
+/* login - signup - createblog*/
+@media (max-width: 950px)and (min-width:500px) {
+
+    .main input,
+    textarea {
+        width: 70%;
+        padding: 8px 20px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 499px) {
+
+    .main input,
+    textarea {
+        width: 100%;
+        padding: 3px 10px;
+        margin-top: 10px;
+    }
+}
+
+/* login - signup - createblog*/
+
+/* All Blogs */
+@media (max-width:805px) and (min-width:450px) {
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .boxes .box {
+        width: 70%;
+    }
+}
+
+@media (max-width:450px) {
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .boxes .box {
+        width: 100%;
+    }
+}
+
+/* All Blogs */
